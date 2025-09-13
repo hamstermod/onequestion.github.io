@@ -331,6 +331,7 @@ submitBtt.onclick = () => {
         userId:userUIdata.user.id,
         text: textTextArea
     }
+    badAnswer.classList.remove("hide");
     fetch("https://onequestionserver-production.up.railway.app/send", {
         method: "POST",
         headers: {
